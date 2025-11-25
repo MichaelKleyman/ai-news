@@ -185,14 +185,14 @@ export default function App() {
     }));
 
     try {
-      const history = getCurrentSession()?.messages || [];
-      const contextMessages = [...history, userMsg];
+      // const history = getCurrentSession()?.messages || [];
+      // const contextMessages = [...history, userMsg];
 
       await geminiService.streamChatResponse(
-        selectedModel,
-        contextMessages,
+        // selectedModel,
+        // contextMessages,
         input,
-        enableNewsMode,
+        // enableNewsMode,
         (text, grounding, metrics) => {
           updateCurrentSession((s) => ({
             ...s,

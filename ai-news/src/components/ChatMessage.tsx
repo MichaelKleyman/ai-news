@@ -21,7 +21,6 @@ import {
   ExpandLess as ExpandLessIcon,
   OpenInNew as OpenInNewIcon,
   CheckCircle as AgreeIcon,
-  Warning as DisagreeIcon,
   TrendingUp as ConfidenceIcon,
 } from "@mui/icons-material";
 import {
@@ -41,7 +40,7 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
 
   const isUser = message.role === MessageRole.USER;
   const isSystem = message.role === MessageRole.SYSTEM;
-  const isModel = message.role === MessageRole.MODEL;
+  //   const isModel = message.role === MessageRole.MODEL;
 
   if (isSystem) {
     return (

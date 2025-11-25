@@ -1,6 +1,6 @@
 import {
-  GeminiModel,
-  Message,
+  //   GeminiModel,
+  //   Message,
   GroundingSource,
   AnalysisMetrics,
 } from "./types";
@@ -13,10 +13,10 @@ type StreamCallback = (
 
 class GeminiService {
   async streamChatResponse(
-    model: GeminiModel,
-    history: Message[],
+    // model: GeminiModel,
+    // history: Message[],
     prompt: string,
-    enableNewsMode: boolean,
+    // enableNewsMode: boolean,
     onUpdate: StreamCallback
   ): Promise<void> {
     // Placeholder implementation
